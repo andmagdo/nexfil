@@ -160,10 +160,9 @@ __   _ _____ _     _ _____ _____ _
     smsg(f'Version      : {script_v}', '>')
     print()
 
-from modules.share import counter
 
 async def query(session, url, test, data, uname):
-    global counter
+    from modules.share import counter
     try:
         if test == 'method':
             await test_method(session, url)
