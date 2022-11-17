@@ -1,4 +1,3 @@
-import asyncio
 import tldextract
 from modules.printer import clout
 

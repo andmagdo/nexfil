@@ -1,5 +1,5 @@
 import tldextract
-from modules.share import found, counter
+from modules.share import found
 
 R = '\033[31m'  # red
 G = '\033[32m'  # green

@@ -1,11 +1,11 @@
-import asyncio
+from asyncio.exceptions import TimeoutError
 from modules.printer import clout
 
 
 async def test_redirect(session, url):
     try:
         response = await session.get(url, allow_redirects=False)
-    except asyncio.exceptions.TimeoutError:
+    except TimeoutError:
         # print(f'{Y}[!] Timeout :{C} {url}{W}')
         return
     except Exception:

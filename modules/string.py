@@ -1,4 +1,4 @@
-import asyncio
+from asyncio.exceptions import TimeoutError
 from modules.printer import clout
 
 async def test_string(session, url, data):
@@ -14,7 +14,7 @@ async def test_string(session, url, data):
                 pass
             else:
                 await clout(response.url)
-    except asyncio.exceptions.TimeoutError:
+    except TimeoutError:
         #print(f'{Y}[!] Timeout :{C} {url}{W}')
         return
     except Exception as exc:

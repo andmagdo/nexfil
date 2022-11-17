@@ -1,6 +1,5 @@
-import asyncio
 from modules.printer import clout
-
+from json import loads
 async def test_api(session, url, endpoint):
     try:
         response = await session.get(endpoint)

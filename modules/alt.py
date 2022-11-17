@@ -1,4 +1,3 @@
-import asyncio
 from modules.printer import clout
 
 async def test_alt(session, url, alt_url):
