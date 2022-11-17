@@ -1,5 +1,5 @@
 import asyncio
-from modules.output import clout
+from modules.printer import clout
 
 async def test_alt(session, url, alt_url):
     try:

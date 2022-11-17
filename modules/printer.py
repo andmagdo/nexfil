@@ -8,7 +8,6 @@ W = '\033[0m'   # white
 Y = '\033[33m'  # yellow
 
 async def clout(url):
-    global found
     found.append(url)
     url = str(url)
     ext = tldextract.extract(url)
